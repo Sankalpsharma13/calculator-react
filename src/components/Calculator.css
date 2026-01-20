@@ -1,0 +1,29 @@
+.calculator-wrapper {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--backdrop-blur));
+    -webkit-backdrop-filter: blur(var(--backdrop-blur));
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--glass-shadow);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.span-two-rounded-bottom {
+    grid-column: span 2;
+    border-bottom-left-radius: var(--radius-lg);
+}

@@ -1,0 +1,53 @@
+.calc-btn {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(var(--backdrop-blur));
+    -webkit-backdrop-filter: blur(var(--backdrop-blur));
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    padding: 20px;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.calc-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.calc-btn:active {
+    transform: translateY(0);
+}
+
+.calc-btn.operator {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.calc-btn.action {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.calc-btn.accent {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 0 15px var(--accent-glow);
+    border: none;
+}
+
+.calc-btn.accent:hover {
+    background: #d60080;
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.calc-btn.large {
+    grid-column: span 2;
+    border-radius: var(--radius-lg);
+}
